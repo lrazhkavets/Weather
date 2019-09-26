@@ -7,7 +7,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +18,66 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+#root {
+  color: aliceblue;
+  background-image: url("./img/nature.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 50px 200px 1fr;
+}
+
+.container-head {
+  grid-area: 1 / 1 / 3 / span 3;
+  text-align: center;
+}
+
+.container-form {
+  grid-area: 2 / 1 / auto / span 3;
+  text-align: center;
+}
+
+.container-weather {
+  grid-area: 3 / 1 / auto / span 2;
+  text-align: center;
+}
+
+img.container-icon {
+  grid-area: 3 / 3 / auto / span 1;
+  text-align: center;
+}
+
+.container-forecast {
+  display: grid;
+  grid-area: 4 / 1 / auto / span 3;
+}
+
+.container-in-forecast {
+  display: grid;
+  grid-area: 4 / 1 / auto / span 3;
+}
+
+.col-1 {
+  grid-area: 1 / 1 / auto / span 1;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.col-2 {
+  grid-area: 1/ 2 / auto / span 1;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.col-3 {
+  grid-area: 1/ 3 / auto / span 1;
+  border: 2px solid;
+  border-radius: 5px;
 }
